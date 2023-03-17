@@ -1,3 +1,190 @@
+header .header_top_section .header_left_section .header_line_container .line2, header .header_top_section .header_left_section .header_line_container .line1 {
+  background-color: #65E4A3;
+  background-size: auto auto;
+  border-bottom-right-radius: 35%;
+  border-top-right-radius: 35%;
+}
+
+.values_container section, .team_container, .numbers_container .number_text, .numbers_container, .story_container, .pages_container {
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   background-color: #0A2640;
-}/*# sourceMappingURL=index.css.map */
+  height: 443px;
+  padding-top: 20px;
+  font-family: sans-serif;
+}
+header .header_top_section {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header_top_section .header_left_section {
+  margin-left: 5%;
+}
+header .header_top_section .header_left_section .header_main_title {
+  font-size: 30px;
+  color: white;
+}
+header .header_top_section .header_left_section .header_line_container {
+  margin-top: 42px;
+}
+header .header_top_section .header_left_section .header_line_container .line1 {
+  width: 15px;
+  height: 10px;
+  margin-bottom: 2px;
+}
+header .header_top_section .header_left_section .header_line_container .line2 {
+  width: 22px;
+  height: 12px;
+}
+header .header_top_section .header_right_section {
+  margin-top: 47px;
+  margin-right: 5%;
+}
+header .header_top_section .header_right_section li {
+  list-style-type: none;
+  color: white;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+header p {
+  color: white;
+  text-align: center;
+}
+header p:nth-child(2) {
+  font-size: 60px;
+  margin: 0 auto;
+  width: 59%;
+}
+header p:last-child {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.pages_container img {
+  margin: 0px 15px 15px 15px;
+}
+.pages_container .height {
+  height: 610px;
+}
+
+.story_container {
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.story_container p:first-child {
+  color: gray;
+  font-size: 20px;
+}
+.story_container p:nth-child(2) {
+  font-size: 40px;
+}
+.story_container p:last-child {
+  font-size: 20px;
+}
+
+.numbers_container {
+  background-color: #0A2640;
+  width: 100%;
+  padding-top: 40px;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+.numbers_container .numbers_title {
+  color: lightgray;
+  text-align: center;
+  font-size: 20px;
+}
+.numbers_container .number_text {
+  color: white;
+  font-size: 38px;
+}
+.numbers_container .numbers {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.numbers_container .numbers p:last-child {
+  color: white;
+}
+.numbers_container .numbers p:first-child {
+  font-size: 60px;
+  color: rgb(79, 233, 164);
+  margin-bottom: 0px;
+}
+
+.team_container {
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+.team_container .team_title {
+  color: rgb(119, 119, 119);
+  font-size: 20px;
+}
+.team_container p:nth-child(2) {
+  font-size: 38px;
+}
+.team_container .team_text {
+  color: rgb(119, 119, 119);
+  font-size: 20px;
+}
+.team_container .team_person {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
+}
+.team_container .team_person img {
+  margin-right: 40px;
+}
+.team_container .team_person p:last-child {
+  color: rgb(119, 119, 119);
+}
+
+.values_container {
+  background-color: #0A2640;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+.values_container section {
+  padding: 50px;
+}
+.values_container section > div {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.values_container section img {
+  margin-right: 30px;
+}
+.values_container section .values_title {
+  color: white;
+  font-size: 20px;
+}
+.values_container section .team_phrase {
+  color: white;
+  font-size: 38px;
+}
+.values_container section .values_text {
+  color: rgb(241, 241, 241);
+}
+.values_container section p:first-child {
+  color: white;
+  font-size: 25px;
+  margin-top: 5px;
+}
+.values_container section p:last-child {
+  color: rgb(241, 241, 241);
+}
