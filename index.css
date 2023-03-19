@@ -26,14 +26,6 @@ header .header_top_section .header_left_section .header_line_container .line2, h
   display: flex;
 }
 
-@media (max-width: 768px) {
-  .bar {
-    display: block;
-  }
-  .team_person img:last-child {
-    display: none;
-  }
-}
 body {
   padding: 0px;
   margin: 0px;
@@ -72,6 +64,9 @@ header .header_top_section .header_right_section {
   margin-top: 47px;
   margin-right: 5%;
 }
+header .header_top_section .header_right_section ul {
+  margin: 0px;
+}
 header .header_top_section .header_right_section a {
   text-decoration: none;
   color: white;
@@ -91,13 +86,13 @@ header .header_top_section .header_right_section li {
   margin-right: 20px;
   margin-left: 20px;
 }
-header .header_top_section .header_right_section a:hover {
+header .header_top_section a:hover {
   color: #65E4A3;
 }
-header .header_top_section .header_right_section #bg_list:hover {
+header .header_top_section #bg_list:hover {
   color: #65E4A3;
 }
-header .header_top_section .header_right_section .bar {
+header .header_top_section .bar {
   display: none;
   width: 25px;
   height: 3px;
@@ -106,6 +101,14 @@ header .header_top_section .header_right_section .bar {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
+}
+@media (max-width: 668px) {
+  header .header_top_section .bar {
+    display: block;
+  }
+  header .header_top_section .nav_list {
+    display: none;
+  }
 }
 header p {
   color: white;
@@ -201,6 +204,16 @@ header p:last-child {
 .team_container .team_person img {
   margin-right: 40px;
 }
+@media (max-width: 1020px) {
+  .team_container .team_person .person_3 {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .team_container .team_person .person_2 {
+    display: none;
+  }
+}
 .team_container .team_person img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -267,6 +280,21 @@ header p:last-child {
   margin-top: 30px;
   padding-bottom: 50px;
 }
+@media (max-width: 965px) {
+  .form_container form {
+    width: 65%;
+  }
+}
+@media (max-width: 745px) {
+  .form_container form {
+    width: 80%;
+  }
+}
+@media (max-width: 610px) {
+  .form_container form {
+    width: 100%;
+  }
+}
 .form_container form input {
   font-size: 20px;
   border-radius: 20px;
@@ -294,6 +322,11 @@ header p:last-child {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 80%;
+}
+@media (max-width: 720px) {
+  .footer_container {
+    width: 40%;
+  }
 }
 .footer_container .lines {
   margin-top: 38px;
