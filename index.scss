@@ -25,10 +25,24 @@ $margin: 50px;
 .flex {
     display: flex;
 }
+@media(max-width: 768px) {
+    .bar {
+        display: block;
+    }
+
+    .team_person {
+        img:last-child {
+            display: none;
+        }
+    }
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
 
 header {
     background-color: $bg;
-    height: 443px;
     padding-top: 20px;
     font-family: $fonts;
     .header_top_section {
@@ -62,7 +76,12 @@ header {
             margin-top: 47px;
             margin-right: 5%;
 
-            .bg_list {
+            a {
+                text-decoration: none;
+                color: $color;
+            }
+
+            #bg_list {
                 background-color: $color;
                 color: rgba(10, 38, 64, 1);
                 padding: 10px 25px 10px 25px;
@@ -74,11 +93,25 @@ header {
 
             li {
                 list-style-type: none;
-                color: $color;
                 margin-right: 20px;
                 margin-left: 20px;
             }
-        
+            a:hover {
+                color: #65E4A3;
+            }
+            #bg_list:hover {
+                color:#65E4A3;
+            }
+            .bar {
+                display: none;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: white;
+            }
+            
         }
     }
     p {
@@ -94,17 +127,16 @@ header {
         margin: 0 auto;
         margin-top: 10px;
         width: 50%;
+        padding-bottom: 50px;
     }
 }
 .pages_container {
     @extend %baza;
+    width: 100%;
 
     img {
         margin: 0px 15px 15px 15px;
-    }
-
-    .height {
-        height: 610px;
+        width: 100%;
     }
 }
 .story_container {
@@ -176,6 +208,10 @@ header {
 
        img {
         margin-right: 40px;
+       }
+       img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
        }
        p:last-child {
         color: rgba(119, 119, 119, 1);
@@ -252,6 +288,10 @@ header {
             border-radius: 20px;
             border-style: none;
             width: 30%;
+        }
+        .form_btn:hover {
+            transform: scale(1.05);
+            cursor: pointer;
         }    
     }
 }
@@ -297,6 +337,11 @@ header {
         list-style-type: none;
         margin-bottom: 30px;
         color: $color3;
+
+        &:hover {
+           color: #65E4A3;
+           cursor: pointer;
+        }
     }
     li:first-child {
         color: black;

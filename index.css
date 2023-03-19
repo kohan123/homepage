@@ -26,9 +26,21 @@ header .header_top_section .header_left_section .header_line_container .line2, h
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .bar {
+    display: block;
+  }
+  .team_person img:last-child {
+    display: none;
+  }
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 header {
   background-color: #0A2640;
-  height: 443px;
   padding-top: 20px;
   font-family: sans-serif;
 }
@@ -60,7 +72,11 @@ header .header_top_section .header_right_section {
   margin-top: 47px;
   margin-right: 5%;
 }
-header .header_top_section .header_right_section .bg_list {
+header .header_top_section .header_right_section a {
+  text-decoration: none;
+  color: white;
+}
+header .header_top_section .header_right_section #bg_list {
   background-color: white;
   color: rgb(10, 38, 64);
   padding: 10px 25px 10px 25px;
@@ -72,9 +88,24 @@ header .header_top_section .header_right_section .bg_list {
 }
 header .header_top_section .header_right_section li {
   list-style-type: none;
-  color: white;
   margin-right: 20px;
   margin-left: 20px;
+}
+header .header_top_section .header_right_section a:hover {
+  color: #65E4A3;
+}
+header .header_top_section .header_right_section #bg_list:hover {
+  color: #65E4A3;
+}
+header .header_top_section .header_right_section .bar {
+  display: none;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 header p {
   color: white;
@@ -89,13 +120,15 @@ header p:last-child {
   margin: 0 auto;
   margin-top: 10px;
   width: 50%;
+  padding-bottom: 50px;
 }
 
+.pages_container {
+  width: 100%;
+}
 .pages_container img {
   margin: 0px 15px 15px 15px;
-}
-.pages_container .height {
-  height: 610px;
+  width: 100%;
 }
 
 .story_container {
@@ -167,6 +200,12 @@ header p:last-child {
 }
 .team_container .team_person img {
   margin-right: 40px;
+}
+.team_container .team_person img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
 }
 .team_container .team_person p:last-child {
   color: rgb(119, 119, 119);
@@ -242,6 +281,12 @@ header p:last-child {
   border-style: none;
   width: 30%;
 }
+.form_container form .form_btn:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
 
 .footer_container {
   font-family: sans-serif;
@@ -283,6 +328,10 @@ header p:last-child {
   list-style-type: none;
   margin-bottom: 30px;
   color: rgb(119, 119, 119);
+}
+.footer_container li:hover {
+  color: #65E4A3;
+  cursor: pointer;
 }
 .footer_container li:first-child {
   color: black;
