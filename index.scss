@@ -95,6 +95,9 @@ header {
             #bg_list:hover {
                 color:#65E4A3;
             }
+            .humburger {
+                cursor: pointer;
+            }
             .bar {
                 display: none;
                 width: 25px;
@@ -108,8 +111,32 @@ header {
                 .bar {
                     display: block;
                 }
+                .humburger.active .bar:nth-child(2) {
+                    opacity: 0;
+                }
+                .humburger.active .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                .humburger.active .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+
                 .nav_list {
-                    display: none;
+                    position: absolute;
+                    left: -110%;
+                    top: 35px;
+                    gap: 0;
+                    flex-direction: column;
+                    background-color: #0A2640;
+                    width: 80%;
+                    text-align: center;
+                    transition: 0.3s;
+                }
+                .nav_list.active {
+                    left: 0;
+                }
+                li {
+                    margin-bottom: 15px;
                 }
             }
     }
@@ -121,6 +148,11 @@ header {
         font-size: 60px;
         margin: 0 auto;
         width: 59%;
+    }
+    @media (max-width: 720px) {
+        p:nth-child(2) {
+            font-size: 40px;
+        }
     }
     p:last-child {
         margin: 0 auto;
@@ -134,8 +166,8 @@ header {
     width: 100%;
 
     img {
-        margin: 0px 15px 15px 15px;
-        width: 100%;
+        margin: 0px 0px 15px 0px;
+        width: 80%;
     }
 }
 .story_container {
@@ -172,6 +204,10 @@ header {
     @extend %baza;
     color: $color;
     font-size: 38px;
+
+    @media (max-width: 668px) {
+        width: 80%;
+    }
    }
    .numbers {
     justify-content: space-evenly;
@@ -182,6 +218,11 @@ header {
         font-size: 60px;
         color: rgba(79, 233, 164, 1);
         margin-bottom: 0px;
+    }
+    @media (max-width: 668px) {
+        p:first-child {
+            font-size: 40px;
+        }
     }
    }
 }
@@ -277,6 +318,11 @@ header {
         width: 45%;
         margin: 0 auto;
         padding-top: 40px;
+
+        @media (max-width:720px) {
+           font-size: 30px;
+           width: 90%;
+        }
     }
     form {
         width: 50%;
@@ -299,6 +345,16 @@ header {
             border-radius: 20px;
             padding: 10px;
             margin-right: 2%;
+
+            @media (max-width:720px) {
+                margin-left: 10px;
+            }
+            @media (max-width:626px) {
+                font-size: 15px;
+            }
+            @media (max-width:425px) {
+                font-size: 10px;
+            }
         }
         .form_btn {
             background-color: rgba(101, 228, 163, 1);
@@ -307,6 +363,13 @@ header {
             border-radius: 20px;
             border-style: none;
             width: 30%;
+
+            @media (max-width:507px) {
+                font-size: 15px;
+            }
+            @media (max-width:425px) {
+                font-size: 10px;
+            }
         }
         .form_btn:hover {
             transform: scale(1.05);
@@ -347,13 +410,25 @@ header {
         color: $color3;
         width: 75%;
         margin-bottom: 30px;
+
+        @media (max-width: 477px) {
+            font-size: 10px;
+        }
     }
     span {
         color: $color3;
+
+        @media (max-width: 477px) {
+            font-size: 10px;
+        }
     }
     ul {
         margin-top: 40px;
         margin-right: 10%;
+
+        @media (max-width: 545px) {
+            margin-right: 0px;
+        }
     }
     li {
         font-size: $size;
@@ -365,6 +440,12 @@ header {
            color: #65E4A3;
            cursor: pointer;
         }
+        @media (max-width: 600px) {
+            font-size: 15px;
+       }
+       @media (max-width: 477px) {
+        font-size: 10px;
+    }
     }
     li:first-child {
         color: black;

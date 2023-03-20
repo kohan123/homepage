@@ -92,6 +92,9 @@ header .header_top_section a:hover {
 header .header_top_section #bg_list:hover {
   color: #65E4A3;
 }
+header .header_top_section .humburger {
+  cursor: pointer;
+}
 header .header_top_section .bar {
   display: none;
   width: 25px;
@@ -106,8 +109,40 @@ header .header_top_section .bar {
   header .header_top_section .bar {
     display: block;
   }
+  header .header_top_section .humburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .header_top_section .humburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+        -ms-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  header .header_top_section .humburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
   header .header_top_section .nav_list {
-    display: none;
+    position: absolute;
+    left: -110%;
+    top: 35px;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #0A2640;
+    width: 80%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .header_top_section .nav_list.active {
+    left: 0;
+  }
+  header .header_top_section li {
+    margin-bottom: 15px;
   }
 }
 header p {
@@ -118,6 +153,11 @@ header p:nth-child(2) {
   font-size: 60px;
   margin: 0 auto;
   width: 59%;
+}
+@media (max-width: 720px) {
+  header p:nth-child(2) {
+    font-size: 40px;
+  }
 }
 header p:last-child {
   margin: 0 auto;
@@ -130,8 +170,8 @@ header p:last-child {
   width: 100%;
 }
 .pages_container img {
-  margin: 0px 15px 15px 15px;
-  width: 100%;
+  margin: 0px 0px 15px 0px;
+  width: 80%;
 }
 
 .story_container {
@@ -166,6 +206,11 @@ header p:last-child {
   color: white;
   font-size: 38px;
 }
+@media (max-width: 668px) {
+  .numbers_container .number_text {
+    width: 80%;
+  }
+}
 .numbers_container .numbers {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -178,6 +223,11 @@ header p:last-child {
   font-size: 60px;
   color: rgb(79, 233, 164);
   margin-bottom: 0px;
+}
+@media (max-width: 668px) {
+  .numbers_container .numbers p:first-child {
+    font-size: 40px;
+  }
 }
 
 .team_container {
@@ -274,6 +324,12 @@ header p:last-child {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media (max-width: 720px) {
+  .form_container .form_text {
+    font-size: 30px;
+    width: 90%;
+  }
+}
 .form_container form {
   width: 50%;
   margin: 0 auto;
@@ -301,6 +357,21 @@ header p:last-child {
   padding: 10px;
   margin-right: 2%;
 }
+@media (max-width: 720px) {
+  .form_container form input {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 626px) {
+  .form_container form input {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .form_container form input {
+    font-size: 10px;
+  }
+}
 .form_container form .form_btn {
   background-color: rgb(101, 228, 163);
   padding: 10px;
@@ -308,6 +379,16 @@ header p:last-child {
   border-radius: 20px;
   border-style: none;
   width: 30%;
+}
+@media (max-width: 507px) {
+  .form_container form .form_btn {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .form_container form .form_btn {
+    font-size: 10px;
+  }
 }
 .form_container form .form_btn:hover {
   -webkit-transform: scale(1.05);
@@ -349,12 +430,27 @@ header p:last-child {
   width: 75%;
   margin-bottom: 30px;
 }
+@media (max-width: 477px) {
+  .footer_container .footer_text {
+    font-size: 10px;
+  }
+}
 .footer_container span {
   color: rgb(119, 119, 119);
+}
+@media (max-width: 477px) {
+  .footer_container span {
+    font-size: 10px;
+  }
 }
 .footer_container ul {
   margin-top: 40px;
   margin-right: 10%;
+}
+@media (max-width: 545px) {
+  .footer_container ul {
+    margin-right: 0px;
+  }
 }
 .footer_container li {
   font-size: 20px;
@@ -365,6 +461,16 @@ header p:last-child {
 .footer_container li:hover {
   color: #65E4A3;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .footer_container li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 477px) {
+  .footer_container li {
+    font-size: 10px;
+  }
 }
 .footer_container li:first-child {
   color: black;
