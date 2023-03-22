@@ -1,0 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(10, 38, 64);
+}
+body main {
+  margin: 0 auto;
+  background-color: aliceblue;
+  width: 40%;
+  height: 450px;
+  margin-top: 15%;
+  margin-bottom: 20%;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+body main header {
+  margin-bottom: 50px;
+}
+body main header h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+body main form {
+  margin-left: 10%;
+}
+body main form label {
+  font-weight: 600;
+}
+body main form input {
+  outline: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 80%;
+}
+body main form button {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #65E4A3;
+  margin-left: 3%;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body main form button:hover {
+  font-size: 20px;
+}
+body main form .mistake {
+  color: red;
+  padding: 0;
+  margin: 0px;
+  text-align: left;
+  font-size: 12px;
+  visibility: hidden;
+}
+body main form .active {
+  visibility: visible;
+}
+body main p {
+  text-align: center;
+  color: gray;
+}
+body main .pages_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main .pages_container img {
+  cursor: pointer;
+}

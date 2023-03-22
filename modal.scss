@@ -1,0 +1,79 @@
+$fonts: sans-serif;
+$color1: rgba(10, 38, 64, 1);
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $color1;
+
+    main{
+        margin: 0 auto;
+        background-color: aliceblue;
+        width: 40%;
+        height: 450px;
+        margin-top: 15%;
+        margin-bottom: 20%;
+        border-radius: 10px;
+        font-family: sans-serif;
+
+        header {
+            margin-bottom: 50px;
+            h1 {
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+        form {
+            margin-left: 10%;
+            label {
+                font-weight: 600;
+            }
+            input {
+                outline: none;
+                margin-bottom: 10px;
+                padding: 10px;
+                width: 80%;
+            }
+            button { 
+                width: 80%;
+                padding: 10px;
+                border-radius: 20px;
+                border: none;
+                background-color: #65E4A3;
+                margin-left: 3%;
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 10px;
+                cursor: pointer;
+                box-sizing: border-box;
+            }
+            button:hover {
+                font-size: 20px;
+            }
+            .mistake {
+                color: red;
+                padding: 0;
+                margin: 0px;
+                text-align: left;
+                font-size: 12px;
+                visibility: hidden;
+            }
+             .active {
+                visibility: visible;
+            }
+        }
+        p {
+            text-align: center;
+            color: gray;
+        }
+        .pages_container {
+            display: flex;
+            justify-content: center;
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+}
