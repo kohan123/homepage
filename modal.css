@@ -74,4 +74,15 @@ body main .pages_container {
 }
 body main .pages_container img {
   cursor: pointer;
+  width: 100%;
+}
+@media (max-width: 720px) {
+  body .container {
+    width: 70%;
+  }
+}
+@media (max-width: 320px) {
+  body .container {
+    width: 100%;
+  }
 }

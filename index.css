@@ -178,6 +178,11 @@ header p:last-child {
   margin-top: 20px;
   font-family: sans-serif;
 }
+@media (max-width: 420px) {
+  .story_container {
+    width: 100%;
+  }
+}
 .story_container p:first-child {
   color: gray;
   font-size: 20px;
@@ -216,6 +221,12 @@ header p:last-child {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+@media (max-width: 420px) {
+  .numbers_container .numbers div {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 .numbers_container .numbers p:last-child {
   color: white;
 }
@@ -233,6 +244,11 @@ header p:last-child {
 .team_container {
   font-family: sans-serif;
   margin-top: 50px;
+}
+@media (max-width: 420px) {
+  .team_container {
+    width: 100%;
+  }
 }
 .team_container .team_title {
   color: rgb(119, 119, 119);
@@ -281,6 +297,12 @@ header p:last-child {
 }
 .values_container section {
   padding: 50px;
+}
+@media (max-width: 420px) {
+  .values_container section {
+    width: 100%;
+    padding: 0;
+  }
 }
 .values_container section > div {
   margin-bottom: 30px;

@@ -174,6 +174,9 @@ header {
    @extend %baza;
    margin-top: 20px;
    font-family: $fonts;
+   @media (max-width: 420px) {
+        width: 100%;
+}
 
    p:first-child {
     color: gray;
@@ -210,6 +213,13 @@ header {
     }
    }
    .numbers {
+
+    @media (max-width: 420px) {
+        div {
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+    }
     justify-content: space-evenly;
     p:last-child {
         color: $color;
@@ -230,6 +240,10 @@ header {
     font-family: $fonts;
     margin-top: $margin;
     @extend %baza;
+
+    @media (max-width: 420px) {
+            width: 100%;
+    }
     .team_title {
         color: rgba(119, 119, 119, 1);
         font-size: $size;
@@ -275,6 +289,11 @@ header {
     section {
         @extend %baza;
         padding: 50px;
+
+        @media (max-width: 420px) {
+                width: 100%;
+                padding: 0;
+        }
 
         >div {
             margin-bottom: 30px;

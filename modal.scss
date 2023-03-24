@@ -73,7 +73,20 @@ body {
 
             img {
                 cursor: pointer;
+                width: 100%;
             }
         }
     }
+    @media (max-width: 720px) {
+        .container {
+            width: 70%;
+        }
+    }
+    @media (max-width: 320px) {
+        .container {
+            width: 100%;
+        }
+
+    }
+
 }
